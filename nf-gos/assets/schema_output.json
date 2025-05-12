@@ -1,0 +1,101 @@
+{
+    "qc_dup_rate": [
+        "gatk_qc/.*/.*metrics",
+        "gatk_qc/.*metrics",
+        "markduplicates/.*metrics"
+	],
+    "qc_dup_rate_tumor": [
+        "gatk_qc/.*/.*metrics",
+        "gatk_qc/.*metrics",
+        "markduplicates/.*metrics"
+	],
+    "qc_dup_rate_normal": [
+        "gatk_qc/.*/.*metrics",
+        "gatk_qc/.*metrics",
+        "markduplicates/.*metrics"
+	],
+    "qc_alignment_summary": [
+        "picard_qc/.*/.*alignment_summary_metrics",
+        "picard_qc/.*alignment_summary_metrics"
+	],
+    "qc_alignment_summary_tumor": [
+        "picard_qc/.*/.*alignment_summary_metrics",
+        "picard_qc/.*alignment_summary_metrics"
+	],
+    "qc_alignment_summary_normal": [
+        "picard_qc/.*/.*alignment_summary_metrics",
+        "picard_qc/.*alignment_summary_metrics"
+	],
+    "qc_insert_size": [
+        "picard_qc/.*insert_size_metrics",
+        "picard_qc/.*/.*insert_size_metrics"
+	],
+    "qc_insert_size_tumor": [
+        "picard_qc/.*insert_size_metrics"
+	],
+    "qc_insert_size_normal": [
+        "picard_qc/.*insert_size_metrics"
+	],
+    "qc_coverage_metrics": [
+        "picard_qc/.*coverage_metrics",
+        "picard_qc/.*/.*coverage_metrics"
+	],
+    "qc_coverage_metrics_tumor": [
+        "picard_qc/.*coverage_metrics",
+        "picard_qc/tumor/.*/.*coverage_metrics"
+	],
+    "qc_coverage_metrics_normal": [
+        "picard_qc/.*coverage_metrics",
+        "picard_qc/normal/.*/.*coverage_metrics"
+	],
+    "msisensorpro": "msisensorpro/.*_report$",
+    "structural_variants": [
+        "gridss/.*high_confidence_somatic\.vcf\.bgz$",
+        "tumor_only_junction_filter/.*/somatic\.filtered\.sv\.rds$",
+        "gridss/.*somatic\.filtered\.sv\.rds$",
+    ],
+    "structural_variants_unfiltered": "gridss.*/.*\.gridss\.filtered\.vcf\.gz$",
+    "frag_cov_tumor": "fragcounter/tumor/cov\.rds$",
+    "frag_cov_normal": "fragcounter/normal/cov\.rds$",
+    "coverage_tumor": "dryclean/tumor/drycleaned\.cov\.rds$",
+    "coverage_normal": "dryclean/normal/drycleaned\.cov\.rds$",
+    "snvs_somatic": [
+        "sage/somatic/.*\.sage\.pass_filtered\.vcf\.gz$",
+        "sage/somatic/tumor_only_filter/.*\.sage\.pass_filtered\.tumoronly\.vcf\.gz$",
+    ],
+    "snvs_somatic_unfiltered": "sage/somatic/.*sage\.somatic\.vcf\.gz$",
+    "snvs_germline": "sage/germline/.*sage\.germline\.vcf\.gz$",
+    "het_pileups": "amber/sites\.txt$",
+    "amber_dir": "amber/amber/",
+    "cobalt_dir": "cobalt/cobalt/",
+    "purple_pp_range": "purple/.*purple\.purity\.range\.tsv$",
+    "purple_pp_best_fit": "purple/.*purple\.purity\.tsv$",
+    "purple_qc": "purple/.*purple\.qc$",
+    "seg": "cbs/seg.rds",
+    "nseg": "cbs/nseg.rds",
+    "multiplicity": "snv_multiplicity/.*est_snv_cn_somatic\.rds$",
+    "multiplicity_germline": "snv_multiplicity/.*est_snv_cn_germline\.rds$",
+    "multiplicity_hetsnps": "snv_multiplicity/.*est_snv_cn_hets\.rds$",
+    "variant_annotations_somatic": "snpeff/somatic/.*ann\.bcf$",
+    "variant_annotations_germline": "snpeff/germline/.*ann\.bcf$",
+    "variant_annotations_somatic_vcf": "snpeff/somatic/.*ann\.vcf$",
+    "variant_annotations_germline_vcf": "snpeff/germline/.*ann\.vcf$",
+    "oncokb_snv": "oncokb/merged_oncokb\.maf$",
+    "oncokb_cna": "oncokb/merged_oncokb_cna\.tsv$",
+    "oncokb_fusions": "oncokb/merged_oncokb_fusions\.tsv$",
+    "karyograph": "jabba/karyograph\.rds$",
+    "jabba_rds": "jabba/jabba\.simple\.rds$",
+    "jabba_gg": "jabba/jabba\.simple\.gg\.rds$",
+    "jabba_gg_balanced": "non_integer_balance/non_integer\.balanced\.gg\.rds$",
+    "jabba_gg_allelic": "lp_phased_balance/lp_phased\.balanced\.gg\.rds$",
+    "events": "events/complex\.rds$",
+    "fusions": "fusions/fusions\.rds$",
+    "signatures_activities_sbs": "sigprofilerassignment/sbs_results/Assignment_Solution/Activities/sbs_Assignment_Solution_Activities\.txt",
+    "signatures_matrix_sbs": "sigprofilerassignment/sig_inputs/output/SBS/sigmat_results\.SBS96\.all",
+    "signatures_decomposed_sbs": "sigprofilerassignment/sbs_results/Assignment_Solution/Activities/Decomposed_MutationType_Probabilities\.txt",
+    "signatures_activities_indel": "sigprofilerassignment/indel_results/Assignment_Solution/Activities/indel_Assignment_Solution_Activities\.txt",
+    "signatures_matrix_indel": "sigprofilerassignment/sig_inputs/output/ID/sigmat_results\.ID83\.all",
+    "signatures_decomposed_indel": "sigprofilerassignment/indel_results/.*/Decomposed_MutationType_Probabilities\.txt",
+    "hrdetect": "hrdetect/hrdetect_results\.rds",
+    "onenesstwoness": "onenesstwoness/onenesstwoness_results\.rds$",
+}
