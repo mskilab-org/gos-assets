@@ -415,6 +415,10 @@
                         "type": "string",
                         "pattern": "^\\S+\\$"
                     },
+					{
+                        "type": "string",
+                        "pattern": "^\\S+\\_report$"
+                    },
                     {
                         "type": "string",
                         "pattern": "^NA$"
