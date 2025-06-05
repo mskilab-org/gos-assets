@@ -1103,6 +1103,60 @@
                 "format": "file-path",
                 "exists": true
             },
+			"ffpe_impact_vcf": {
+                "errorMessage": "FFPE Impact Annotated somatic VCF file cannot contain spaces and must have extension '.vcf' or 'vcf.gz'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf$"
+                    },
+					{
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf.gz$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+			"ffpe_impact_filtered_vcf": {
+                "errorMessage": "FFPE Impact Annotated Filtered somatic VCF file cannot contain spaces and must have extension '.vcf' or 'vcf.gz'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf$"
+                    },
+					{
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf.gz$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
             "hrdetect": {
                 "errorMessage": "HRDetect file cannot contain spaces and must have extension '.rds'",
                 "anyOf": [
