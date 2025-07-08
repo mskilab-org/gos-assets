@@ -137,7 +137,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
@@ -160,7 +164,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
@@ -183,7 +191,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
@@ -206,7 +218,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
@@ -229,7 +245,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
@@ -252,7 +272,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
@@ -275,7 +299,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
@@ -298,7 +326,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
@@ -321,7 +353,7 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
                     },
                     {
                         "type": "string",
@@ -344,7 +376,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
@@ -367,7 +403,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
@@ -390,7 +430,11 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.metrics$"
+                        "pattern": "^\\S+metrics$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+txt$"
                     },
                     {
                         "type": "string",
