@@ -126,6 +126,14 @@
                     },
                     {
                         "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
                         "maxLength": 0
                     }
                 ],
@@ -834,6 +842,52 @@
             },
             "snv_somatic_vcf": {
                 "errorMessage": "Sage somatic VCF output file cannot contain spaces and must have extension '.vcf' or '.vcf.gz'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf(\\.gz)?$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "snv_somatic_vcf_tumoronly_filtered": {
+                "errorMessage": "Sage somatic tumor only filtered VCF output file cannot contain spaces and must have extension '.vcf' or '.vcf.gz'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf(\\.gz)?$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "snv_somatic_vcf_rescue_ch_heme": {
+                "errorMessage": "Sage somatic heme rescued VCF output file cannot contain spaces and must have extension '.vcf' or '.vcf.gz'",
                 "anyOf": [
                     {
                         "type": "string",
