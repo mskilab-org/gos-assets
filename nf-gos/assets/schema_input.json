@@ -684,7 +684,26 @@
                 "exists": true
             },
             "vcf": {
-                "errorMessage": "VCF file for reads 1 cannot contain spaces and must have extension '.vcf' or '.vcf.gz' or '.rds'",
+                "errorMessage": "VCF file cannot contain spaces and must have extension '.vcf' or '.vcf.gz' or '.rds'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf(\\.gz|\\.bgz)?$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.rds$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+             "vcf_raw": {
+                "errorMessage": "VCF raw file cannot contain spaces and must have extension '.vcf' or '.vcf.gz' or '.rds'",
                 "anyOf": [
                     {
                         "type": "string",
