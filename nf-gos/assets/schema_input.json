@@ -1028,6 +1028,52 @@
                 "format": "file-path",
                 "exists": true
             },
+            "echtvar_variant_somatic_bcf": {
+                "errorMessage": "Echtvar annotated somatic BCF file cannot contain spaces and must have extension '.bcf' ",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.bcf$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "echtvar_variant_germline_bcf": {
+                "errorMessage": "Echtvar annotated germline BCF file cannot contain spaces and must have extension '.bcf' ",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.bcf$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
             "snv_multiplicity": {
                 "errorMessage": "SNV Multiplicity file cannot contain spaces and must have extension '.rds'",
                 "anyOf": [
