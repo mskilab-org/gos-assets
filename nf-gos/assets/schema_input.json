@@ -756,7 +756,7 @@
                 "format": "file-path",
                 "exists": true
             },
-            "ni_balanced_rds": {
+            "ni_balanced_gg": {
                 "errorMessage": "balanced_gg.rds file and must have extension '.rds'",
                 "anyOf": [
                     {
@@ -779,7 +779,7 @@
                 "format": "file-path",
                 "exists": true
             },
-            "lp_balanced_rds": {
+            "lp_balanced_gg": {
                 "errorMessage": "balanced_gg.rds file and must have extension '.rds'",
                 "anyOf": [
                     {
