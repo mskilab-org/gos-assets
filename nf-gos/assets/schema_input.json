@@ -1308,6 +1308,52 @@
                 ],
                 "format": "file-path",
                 "exists": true
+            },
+            "conpair_concordance": {
+                "errorMessage": "Conpair concordance cannot have spaces and must have extension '.txt'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.txt$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "conpair_contamination": {
+                "errorMessage": "Conpair contamination cannot have spaces and must have extension '.txt'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.txt$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
             }
         },
         "required": ["patient", "sample", "status"],
