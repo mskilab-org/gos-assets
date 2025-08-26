@@ -602,6 +602,52 @@
                 "format": "directory-path",
                 "exists": true
             },
+            "purple_pp_best_fit": {
+                "errorMessage": "Purple PP Best Fit file cannot contain spaces and must have extension '.tsv'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.purity\\.tsv$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "purple_pp_range": {
+                "errorMessage": "Purple PP Range file cannot contain spaces and must have extension '.tsv'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.range\\.tsv$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
             "purity": {
                 "errorMessage": "purity must be a number",
                 "anyOf": [
@@ -682,6 +728,29 @@
                     {
                         "type": "string",
                         "pattern": "^\\S+\\.rds$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "sv_tumor_only_rds": {
+                "errorMessage": "SV tumor-only filtered RDS file and must have extension '.rds'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.rds$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
                     },
                     {
                         "type": "string",
@@ -826,11 +895,34 @@
                 "exists": true
             },
             "fusions": {
-                "errorMessage": "fusions.rds file and must have extension '.rds'",
+                "errorMessage": "fusions.rds file must have extension '.rds'",
                 "anyOf": [
                     {
                         "type": "string",
                         "pattern": "^\\S+\\.rds$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "altedge_annotations": {
+                "errorMessage": "annotated junctions file from fusions workflow must have extension '.tsv'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.annotations\\.tsv$"
                     },
                     {
                         "type": "string",
@@ -1038,6 +1130,52 @@
             },
             "snv_multiplicity": {
                 "errorMessage": "SNV Multiplicity file cannot contain spaces and must have extension '.rds'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.rds$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "snv_multiplicity_germline": {
+                "errorMessage": "SNV Multiplicity germline file cannot contain spaces and must have extension '.rds'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.rds$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "snv_multiplicity_hets": {
+                "errorMessage": "SNV Multiplicity hets file cannot contain spaces and must have extension '.rds'",
                 "anyOf": [
                     {
                         "type": "string",
