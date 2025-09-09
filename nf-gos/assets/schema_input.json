@@ -779,6 +779,44 @@
                 "format": "file-path",
                 "exists": true
             },
+            "structural_variants_chimera_filtered": {
+                "errorMessage": "SV VCF file filtered for FFPE chimeras cannot contain spaces and must have extension '.vcf' or '.vcf.gz' or '.rds'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf(\\.gz|\\.bgz)?$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.rds$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "structural_variants_raw_chimera_filtered": {
+                "errorMessage": "SV raw VCF file filtered for FFPE chimeras cannot contain spaces and must have extension '.vcf' or '.vcf.gz' or '.rds'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf(\\.gz|\\.bgz)?$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.rds$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
             "jabba_gg": {
                 "errorMessage": "jabba.simple.gg.rds file and must have extension '.rds'",
                 "anyOf": [
