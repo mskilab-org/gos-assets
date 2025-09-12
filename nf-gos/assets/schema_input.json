@@ -93,6 +93,7 @@
             },
             "cram": {
                 "errorMessage": "CRAM file cannot contain spaces and must have extension '.cram'",
+                "x-index": "crai",
                 "anyOf": [
                     {
                         "type": "string",
@@ -108,6 +109,7 @@
             },
             "bam": {
                 "errorMessage": "BAM file cannot contain spaces and must have extension '.bam'",
+                "x-index": "bai",
                 "anyOf": [
                     {
                         "type": "string",
@@ -129,7 +131,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_dup_rate": {
+            "qc_dup_rate": {
                 "errorMessage": "EstimateLibraryComplexity file and must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -156,7 +158,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_dup_rate_tumor": {
+            "qc_dup_rate_tumor": {
                 "errorMessage": "Tumor EstimateLibraryComplexity file and must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -183,7 +185,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_dup_rate_normal": {
+            "qc_dup_rate_normal": {
                 "errorMessage": "Normal EstimateLibraryComplexity file and must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -210,7 +212,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_insert_size": {
+            "qc_insert_size": {
                 "errorMessage": "Picard MultipleMetrics insert size file must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -237,7 +239,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_insert_size_tumor": {
+            "qc_insert_size_tumor": {
                 "errorMessage": "Tumor Picard MultipleMetrics insert size file must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -264,7 +266,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_insert_size_normal": {
+            "qc_insert_size_normal": {
                 "errorMessage": "Normal Picard MultipleMetrics insert size file must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -291,7 +293,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_alignment_summary": {
+            "qc_alignment_summary": {
                 "errorMessage": "Picard MultipleMetrics alignment summary file and must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -318,7 +320,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_alignment_summary_tumor": {
+            "qc_alignment_summary_tumor": {
                 "errorMessage": "Tumor Picard MultipleMetrics alignment summary file and must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -345,7 +347,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_alignment_summary_normal": {
+            "qc_alignment_summary_normal": {
                 "errorMessage": "Normal Picard MultipleMetrics alignment summary file and must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -368,7 +370,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_coverage_metrics": {
+            "qc_coverage_metrics": {
                 "errorMessage": "Picard CollectWGSMetrics file must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -395,7 +397,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_coverage_metrics_tumor": {
+            "qc_coverage_metrics_tumor": {
                 "errorMessage": "Tumor Picard CollectWGSMetrics file must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -422,7 +424,7 @@
                 "format": "file-path",
                 "exists": true
             },
-			"qc_coverage_metrics_normal": {
+            "qc_coverage_metrics_normal": {
                 "errorMessage": "Normal Picard CollectWGSMetrics file must have extension '.metrics'",
                 "anyOf": [
                     {
@@ -456,7 +458,7 @@
                         "type": "string",
                         "pattern": "^\\S+\\$"
                     },
-					{
+                    {
                         "type": "string",
                         "pattern": "^\\S+\\_report$"
                     },
@@ -483,7 +485,7 @@
                         "type": "string",
                         "pattern": "^\\S+\\$"
                     },
-					{
+                    {
                         "type": "string",
                         "pattern": "^\\S+\\_report$"
                     },
@@ -720,6 +722,7 @@
             },
             "vcf": {
                 "errorMessage": "VCF file cannot contain spaces and must have extension '.vcf' or '.vcf.gz' or '.rds'",
+                "x-index": "tbi",
                 "anyOf": [
                     {
                         "type": "string",
@@ -760,8 +763,9 @@
                 "format": "file-path",
                 "exists": true
             },
-             "vcf_raw": {
+            "vcf_raw": {
                 "errorMessage": "VCF raw file cannot contain spaces and must have extension '.vcf' or '.vcf.gz' or '.rds'",
+                "x-index": "tbi",
                 "anyOf": [
                     {
                         "type": "string",
@@ -781,6 +785,7 @@
             },
             "structural_variants_chimera_filtered": {
                 "errorMessage": "SV VCF file filtered for FFPE chimeras cannot contain spaces and must have extension '.vcf' or '.vcf.gz' or '.rds'",
+                "x-index": "tbi",
                 "anyOf": [
                     {
                         "type": "string",
@@ -800,6 +805,7 @@
             },
             "structural_variants_raw_chimera_filtered": {
                 "errorMessage": "SV raw VCF file filtered for FFPE chimeras cannot contain spaces and must have extension '.vcf' or '.vcf.gz' or '.rds'",
+                "x-index": "tbi",
                 "anyOf": [
                     {
                         "type": "string",
@@ -980,6 +986,7 @@
             },
             "snv_somatic_vcf": {
                 "errorMessage": "Sage somatic VCF output file cannot contain spaces and must have extension '.vcf' or '.vcf.gz'",
+                "x-index": "tbi",
                 "anyOf": [
                     {
                         "type": "string",
@@ -1003,6 +1010,7 @@
             },
             "snv_somatic_vcf_tumoronly_filtered": {
                 "errorMessage": "Sage somatic tumor only filtered VCF output file cannot contain spaces and must have extension '.vcf' or '.vcf.gz'",
+                "x-index": "tbi",
                 "anyOf": [
                     {
                         "type": "string",
@@ -1026,6 +1034,7 @@
             },
             "snv_somatic_vcf_rescue_ch_heme": {
                 "errorMessage": "Sage somatic heme rescued VCF output file cannot contain spaces and must have extension '.vcf' or '.vcf.gz'",
+                "x-index": "tbi",
                 "anyOf": [
                     {
                         "type": "string",
@@ -1049,6 +1058,7 @@
             },
             "snv_germline_vcf": {
                 "errorMessage": "Sage germline VCF output file cannot contain spaces and must have extension '.vcf' or '.vcf.gz'",
+                "x-index": "tbi",
                 "anyOf": [
                     {
                         "type": "string",
@@ -1077,7 +1087,7 @@
                         "type": "string",
                         "pattern": "^\\S+\\.vcf$"
                     },
-					{
+                    {
                         "type": "string",
                         "pattern": "^\\S+\\.vcf.gz$"
                     },
@@ -1311,7 +1321,7 @@
                         "type": "string",
                         "pattern": "^\\S+\\.txt$"
                     },
-					{
+                    {
                         "type": "string",
                         "pattern": "^\\S+\\.all$"
                     },
@@ -1338,7 +1348,7 @@
                         "type": "string",
                         "pattern": "^\\S+\\.txt$"
                     },
-					{
+                    {
                         "type": "string",
                         "pattern": "^\\S+\\.all$"
                     },
@@ -1365,7 +1375,7 @@
                         "type": "string",
                         "pattern": "^\\S+\\.txt$"
                     },
-					{
+                    {
                         "type": "string",
                         "pattern": "^\\S+\\.all$"
                     },
@@ -1385,14 +1395,15 @@
                 "format": "file-path",
                 "exists": true
             },
-			"ffpe_impact_vcf": {
+            "ffpe_impact_vcf": {
                 "errorMessage": "FFPE Impact Annotated somatic VCF file cannot contain spaces and must have extension '.vcf' or 'vcf.gz'",
+                "x-index": "tbi",
                 "anyOf": [
                     {
                         "type": "string",
                         "pattern": "^\\S+\\.vcf$"
                     },
-					{
+                    {
                         "type": "string",
                         "pattern": "^\\S+\\.vcf.gz$"
                     },
@@ -1412,14 +1423,15 @@
                 "format": "file-path",
                 "exists": true
             },
-			"ffpe_impact_filtered_vcf": {
+            "ffpe_impact_filtered_vcf": {
                 "errorMessage": "FFPE Impact Annotated Filtered somatic VCF file cannot contain spaces and must have extension '.vcf' or 'vcf.gz'",
+                "x-index": "tbi",
                 "anyOf": [
                     {
                         "type": "string",
                         "pattern": "^\\S+\\.vcf$"
                     },
-					{
+                    {
                         "type": "string",
                         "pattern": "^\\S+\\.vcf.gz$"
                     },
