@@ -674,6 +674,56 @@
                     }
                 ]
             },
+            "min_purity_limit": {
+                "errorMessage": "min purity limit must be a number",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "number"
+                    }
+                ]
+            },
+            "max_purity_limit": {
+                "errorMessage": "max purity limit must be a number",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "number"
+                    }
+                ]
+            },
+            "min_ploidy_limit": {
+                "errorMessage": "min ploidy limit must be a number",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "number"
+                    }
+                ],
+                "default": 1.5
+            },
+            "max_ploidy_limit": {
+                "errorMessage": "max ploidy limit must be a number",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "number"
+                    }
+                ],
+                "default": 5.5
+            },
             "seg": {
                 "errorMessage": "SEG file cannot contain spaces and must have extension '.rds'",
                 "anyOf": [
