@@ -627,6 +627,29 @@
                 "format": "file-path",
                 "exists": true
             },
+            "purple_pp_best_fit_revised": {
+                "errorMessage": "Revised Purple PP Best Fit file cannot contain spaces and must have extension '.tsv'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.purity\\.tsv$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
             "purple_pp_range": {
                 "errorMessage": "Purple PP Range file cannot contain spaces and must have extension '.tsv'",
                 "anyOf": [
