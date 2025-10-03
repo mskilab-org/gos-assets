@@ -131,6 +131,30 @@
                 "format": "file-path",
                 "exists": true
             },
+            "bam_chimera_filtered": {
+                "errorMessage": "FFPE Chimera-filtered BAM file cannot contain spaces and must have extension '.bam'",
+                "x-index": "bai",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.bam$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
             "qc_dup_rate": {
                 "errorMessage": "EstimateLibraryComplexity file and must have extension '.metrics'",
                 "anyOf": [
@@ -1708,7 +1732,8 @@
             "lane": {
                 "anyOf": [
                     { "required": ["fastq_1"] },
-                    { "required": ["bam"] }
+                    { "required": ["bam"] },
+                    { "required": ["bam_chimera_filtered"] }
                 ]
             }
         },
