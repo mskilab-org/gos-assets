@@ -697,6 +697,27 @@
                 "format": "file-path",
                 "exists": true
             },
+            "purple_use_svs": {
+                "errorMessage": "purple_use_svs sample level parameter must be boolean",
+                "anyOf": [
+                    {
+                        "type": "integer"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "default": 1
+            },
             "purity": {
                 "errorMessage": "purity must be a number",
                 "anyOf": [
