@@ -1301,7 +1301,7 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.vcf$"
+                        "pattern": "^\\S+\\.vcf(\\.gz|\\.bgz)?$"
                     },
                     {
                         "type": "string",
@@ -1324,7 +1324,7 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.bcf$"
+                        "pattern": "^\\S+\\.bcf(\\.gz|\\.bgz)?$"
                     },
                     {
                         "type": "string",
@@ -1347,7 +1347,7 @@
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.bcf$"
+                        "pattern": "^\\S+\\.bcf(\\.gz|\\.bgz)?$"
                     },
                     {
                         "type": "string",
@@ -1366,11 +1366,11 @@
                 "exists": true
             },
             "echtvar_variant_germline_bcf": {
-                "errorMessage": "Annotated somatic BCF file cannot contain spaces and must have extension '.bcf' ",
+                "errorMessage": "Annotated germline BCF file cannot contain spaces and must have extension '.bcf' ",
                 "anyOf": [
                     {
                         "type": "string",
-                        "pattern": "^\\S+\\.bcf$"
+                        "pattern": "^\\S+\\.bcf(\\.gz|\\.bgz)?$"
                     },
                     {
                         "type": "string",
