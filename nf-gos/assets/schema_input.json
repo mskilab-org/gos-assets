@@ -1110,6 +1110,54 @@
                 "format": "file-path",
                 "exists": true
             },
+            "mutect2_taps_vcf": {
+                "errorMessage": "Sage somatic VCF output file cannot contain spaces and must have extension '.vcf' or '.vcf.gz'",
+                "x-index": "tbi",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf(\\.gz)?$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
+            "rastair_vcf": {
+                "errorMessage": "Sage somatic VCF output file cannot contain spaces and must have extension '.vcf' or '.vcf.gz'",
+                "x-index": "tbi",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.vcf(\\.gz)?$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^NA$"
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^/dev/null$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
             "snv_somatic_vcf": {
                 "errorMessage": "Sage somatic VCF output file cannot contain spaces and must have extension '.vcf' or '.vcf.gz'",
                 "x-index": "tbi",
