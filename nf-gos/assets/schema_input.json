@@ -801,7 +801,7 @@
                 "default": 5.5
             },
             "cbs_cov": {
-                "description": "Authoritative CBS model coverage (cbs/cov.rds). Import together with seg and nseg from the same provenance-tagged CBS bundle.",
+                "description": "CBS coverage (cbs/cov.rds). Tagged coverage requires matching seg/nseg provenance. Untagged legacy coverage is supported; legacy graph fits use dryclean_cov when this field is absent.",
                 "errorMessage": "CBS coverage file cannot contain spaces and must have extension '.rds'",
                 "anyOf": [
                     {
