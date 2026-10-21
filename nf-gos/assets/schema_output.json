@@ -71,6 +71,7 @@
     "purple_pp_range": "purple/.*purple\.purity\.range\.tsv$",
     "purple_pp_best_fit": "purple/.*purple\.purity\.tsv$",
     "purple_qc": "purple/.*purple\.qc$",
+    "cbs_cov": "cbs/cov\.rds$",
     "seg": "cbs/seg.rds",
     "nseg": "cbs/nseg.rds",
     "multiplicity": "snv_multiplicity/.*est_snv_cn_somatic\.rds$",

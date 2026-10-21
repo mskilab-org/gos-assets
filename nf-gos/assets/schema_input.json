@@ -800,6 +800,22 @@
                 ],
                 "default": 5.5
             },
+            "cbs_cov": {
+                "description": "Authoritative CBS model coverage (cbs/cov.rds). Import together with seg and nseg from the same provenance-tagged CBS bundle.",
+                "errorMessage": "CBS coverage file cannot contain spaces and must have extension '.rds'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.rds$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ],
+                "format": "file-path",
+                "exists": true
+            },
             "seg": {
                 "errorMessage": "SEG file cannot contain spaces and must have extension '.rds'",
                 "anyOf": [
